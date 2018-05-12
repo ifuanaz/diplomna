@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Building Company</title>
+    <link rel="icon" href="dist/images/logo-ico.gif" type="image/gif" sizes="32x32">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- ngDialog CSS -->
+    <link rel="stylesheet" href="node_modules/ng-dialog/css/ngDialog.min.css">
+    <link rel="stylesheet" href="node_modules/ng-dialog/css/ngDialog-theme-default.min.css">
+    <!-- angular-ui-carousel -->
+    <link rel="stylesheet" href="node_modules/angular-ui-carousel/dist/ui-carousel.min.css">
+
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+<body ng-controller="RootController as act">
+
+    <div ng-loader time="'2000'" class="page-preloader load">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <!-- Logo -->
+                <div class="navbar-header col-sm-3">
+                    <button type="button" class="navbar-toggle collapsed header-nav-toggle" data-toggle="collapse" data-target="#header-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">
+                        <img src="dist/images/logo.png" alt="LOGO">
+                    </a>
+                </div>
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse col-sm-9 header-nav">
+                    <ul class="navigation">
+                        <li><a href="#why-we" du-smooth-scroll>Ми</a></li>
+                        <li><a href="#result" du-smooth-scroll>Продукція</a></li>
+                        <li><a href="#houses" du-smooth-scroll>Квартири</a></li>
+                        <li><a href="#uniqueness" du-smooth-scroll>Наші переваги</a></li>
+                        <li><a href="#contacts" du-smooth-scroll>Контакти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="slider">
+        <ui-carousel slides="act.slides" autoplay="true" autoplay-speed="5000" dots="false">
+            <carousel-item>
+                <div class="item slide-item" style="background-image: url({{ item.image }});">
+                    <div class="wrap-slide-info">
+                        <div class="slide-info">
+                            <h3 class="slide-title">{{ item.title }}</h3>
+                            <p class="slide-text">{{ item.text }}</p>
+                            <a href="#houses" du-smooth-scroll class="slide-link">Обрати квартиру</a>
+                        </div>
+                    </div>
+                </div>
+            </carousel-item>
+
+            <!-- <carousel-prev>
+                <button type="button" class="slider-btn-prev"></button>
+            </carousel-prev>
+
+            <carousel-next>
+                <button type="button" class="slider-btn-next"></button>
+            </carousel-next> -->
+        </ui-carousel>
+    </section>
+
+    <section class="wrap-houses" id="houses">
+        <div class="container">
+            <div class="row">
+                <div class="houses-head col-xs-12">
+                    <h1 class="title">Житлові комплекси</h1>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="houses-content col-xs-12">
+                    <complex-list house="act.house"></complex-list>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap-result" id="result">
+        <div class="result-background"></div>
+        <div class="container content-result">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3 class="result-title">Ми будуємо для <span class="you">ВАС</span> найкращі, сучасні, затишні квартири</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-7 result">
+                    <div class="result-icon">
+                        <img src="dist/images/icon-building.svg" alt="icon">
+                    </div>
+                    <div class="result-info">
+                        <span class="count">30</span>
+                        <p class="text">зданих будинків</p>
+                    </div>
+                </div>
+                <div class="col-sm-5 result">
+                    <div class="result-icon">
+                        <img src="dist/images/icon-house.svg" alt="icon">
+                    </div>
+                    <div class="result-info">
+                        <span class="count">5000</span>
+                        <p class="text">щасливих  сімей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap-choose-house" id="choose-house">
+        <complex-details house="act.house"></complex-details>
+    </section>
+
+    <section class="wrap-uniqueness" id="uniqueness">
+        <div class="uniqueness-background"></div>
+        <div class="container content-uniqueness">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="uniqueness-info">
+                        <h4 class="title">Що робить нас</h4>
+                        <p class="text">Унікальними</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="uniqueness-item clients">
+                        <h4 class="title">100%</h4>
+                        <p class="text">Щасливих клієнтів</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="uniqueness-item quality">
+                        <h4 class="title">ЯКІСТЬ</h4>
+                        <p class="text">Європейська гарантія</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="uniqueness-item family">
+                        <h4 class="title">5000</h4>
+                        <p class="text">Щасливих Сімей</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-we" id="why-we">
+        <div class="container">
+            <div class="row">
+                <div class="why-we-head col-xs-12">
+                    <h1 class="title">Чому обирають нас</h1>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="row">
+                <standards></standards>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="wrap-contact" id="contacts">
+        <div id="map" class="map"></div>
+        <div class="container contact">
+            <form action="" class="contact-form">
+                <h2 class="title">Надіслати повідомлення</h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" placeholder="Ваше Імя">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" placeholder="Ваш Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="phone" ng-mask placeholder="Номер телефону">
+                    </div>
+                    <div class="col-sm-6">
+                        <select>
+                            <option value="" disabled selected hidden>Оберіть тему</option>
+                            <option value="">Тема 1</option>
+                            <option value="">Тема 2</option>
+                            <option value="">Тема 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <textarea placeholder="Напишыть текст..."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit">Надіслати листа</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <section class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="footer-info">
+                            <img src="dist/images/footer-logo.png" alt="Logo">
+                            <p class="text">
+                                Вже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки.
+                                Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від,
+                                наприклад, "Тут іде текст =).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 block-footer-menu">
+                        <h4 class="footer-title">Меню</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#why-we" du-smooth-scroll>Ми</a></li>
+                            <li><a href="#result" du-smooth-scroll>Продукція</a></li>
+                            <li><a href="#houses" du-smooth-scroll>Квартири</a></li>
+                            <li><a href="#uniqueness" du-smooth-scroll>Наші переваги</a></li>
+                            <li><a href="#contacts" du-smooth-scroll>Контакти</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h4 class="footer-title">Адрес</h4>
+                        <div class="block-adress col-xs-12">
+                            <div class="item icon">
+                                <img src="dist/images/icon-world.svg" alt="icon">
+                            </div>
+                            <div class="item name">Адрес:</div>
+                            <div class="item info">
+                                <span class="info-data">м. Івано-Франківськ</span>
+                                <span class="info-data">вул. Шопена 3</span>
+                            </div>
+                        </div>
+                        <div class="block-adress col-xs-12">
+                            <div class="item icon">
+                                <img src="dist/images/icon-phone.svg" alt="icon">
+                            </div>
+                            <div class="item name">Телефон:</div>
+                            <div class="item info">
+                                <span class="info-data">+3 (096) 653 12 14</span>
+                                <span class="info-data">+3 (096) 653 12 14</span>
+                            </div>
+                        </div>
+                        <div class="block-adress col-xs-12">
+                            <div class="item icon">
+                                <img src="dist/images/icon-envelope.svg" alt="icon">
+                            </div>
+                            <div class="item name">Email:</div>
+                            <div class="item info">
+                                <span class="info-data">mail@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-bottom container">
+            <p class="copyright">BUILDING COMPANY 2017 © All Rights Reserved</p>
+        </section>
+    </footer>
+
+    <div class="up" ng-up show-target="why-we">
+        <i class="icon icon-up"></i>
+        up
+    </div>
+
+
+    <script>
+        function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var myCenter = new google.maps.LatLng(48.922633, 24.711117);
+            var mapOptions = {center: myCenter, zoom: 16, disableDefaultUI: true, scrollwheel: false,};
+            var map = new google.maps.Map(mapCanvas,mapOptions);
+            var marker = new google.maps.Marker({
+                position: myCenter,
+                icon: "/dist/images/icon-map.svg"
+            });
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB75ZnfCunXIveMQMIZhJney3iocIYoqdY&callback=myMap"></script>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery-inputmask/index.js" charset="utf-8"></script>
+    <!--AngularJS  -->
+    <script src="node_modules/angular/angular.js" charset="utf-8"></script>
+    <!-- angular-scroll -->
+    <script src="node_modules/angular-scroll/angular-scroll.js" charset="utf-8"></script>
+    <!-- angular-ui-carousel -->
+    <script src="node_modules/angular-ui-carousel/dist/ui-carousel.min.js" charset="utf-8"></script>
+    <!-- ngDialog JS -->
+    <script src="node_modules/ng-dialog/js/ngDialog.min.js" charset="utf-8"></script>
+    <!-- Lodash -->
+    <script src="node_modules/lodash/lodash.js" charset="utf-8"></script>
+    <!-- APP service -->
+    <script src="dist/js/app/service.js" charset="utf-8"></script>
+    <!-- APP -->
+    <script src="dist/js/app/app.js" charset="utf-8"></script>
+    <!-- Directives -->
+    <script src="dist/js/app/directives.js" charset="utf-8"></script>
+    <!-- Modules Complex -->
+    <script src="dist/js/app/complex/complex.services.js" charset="utf-8"></script>
+    <script src="dist/js/app/complex/complex.components.js" charset="utf-8"></script>
+    <!-- Modules Standards -->
+    <script src="dist/js/app/standard/standard.services.js" charset="utf-8"></script>
+    <script src="dist/js/app/standard/standard.components.js" charset="utf-8"></script>
+</body>
+</html>

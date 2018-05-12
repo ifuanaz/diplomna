@@ -1,0 +1,515 @@
+[
+    {
+        "id": 1,
+        "title": "Житловий масив “ Затишок Дніпра ”",
+        "image": "dist/images/buildings/img1.png",
+        "city": "м. Київ",
+        "street": "вул. Набережна 103",
+        "planning": {
+            "image": "dist/images/floor-planing.png",
+            "options": [
+                {
+                    "image": "dist/images/plan1.png",
+                    "size": "42,99"
+                },
+                {
+                    "image": "dist/images/plan2.png",
+                    "size": "78,57"
+                },
+                {
+                    "image": "dist/images/plan1.png",
+                    "size": "42,99"
+                }
+            ]
+        },
+        "flats": [
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 1
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 2
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 3
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 4
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 5
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 6
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 7
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 8
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 10
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 11
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 12
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 13
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 14
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 15
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 16
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 20
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 21
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 22
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 24
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 25
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 26
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 29
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 32
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Житловий масив “ Велика Сім’я ”",
+        "image": "dist/images/buildings/img2.png",
+        "city": "м. Івано-Франківськ",
+        "street": "вул. Галицька 203",
+        "flats": [
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 1
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 2
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 3
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 4
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 5
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 6
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 7
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 8
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 10
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 11
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 12
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 13
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 14
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 15
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 16
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 20
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 21
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 22
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 23
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 25
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 26
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 29
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 31
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Житловий масив “ Затишок Враю ”",
+        "image": "dist/images/buildings/img3.png",
+        "city": "м. Сімферопіль",
+        "street": "вул. Набережна 13",
+        "flats": [
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 1
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 2
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 3
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 4
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 5
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 6
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 7
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 8
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 10
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 11
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 12
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 13
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 14
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 15
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 16
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 20
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 21
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 22
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 23
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 25
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 26
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 29
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 31
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Житловий масив “ Затишок Шеш ”",
+        "image": "dist/images/buildings/img4.png",
+        "city": "м. Львів",
+        "street": "вул. Мазепи 2",
+        "flats": [
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 1
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 2
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 3
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 4
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 5
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 6
+            },
+            {
+                "rooms": 1,
+                "balcon": false,
+                "numberOfFlat": 7
+            },
+            {
+                "rooms": 1,
+                "balcon": true,
+                "numberOfFlat": 8
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 10
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 11
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 12
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 13
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 14
+            },
+            {
+                "rooms": 2,
+                "balcon": false,
+                "numberOfFlat": 15
+            },
+            {
+                "rooms": 2,
+                "balcon": true,
+                "numberOfFlat": 16
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 20
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 21
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 22
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 23
+            },
+            {
+                "rooms": 3,
+                "balcon": true,
+                "numberOfFlat": 25
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 26
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 29
+            },
+            {
+                "rooms": 3,
+                "balcon": false,
+                "numberOfFlat": 31
+            }
+        ]
+    }
+]

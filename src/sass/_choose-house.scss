@@ -1,0 +1,268 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    border: 1px solid #ccc;
+    padding: 0 15px;
+    border-radius: 15px;
+    height: 30px;
+    width: 105px;
+    position: relative;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+input[type="checkbox"] + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0%, -50%);
+    height: 13px;
+    width: 28px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $darkBlue;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.2s ease-out;
+}
+
+input[type="checkbox"]:checked + label:before {
+    right: 15px;
+    background-color: $yellow;
+}
+
+input[type="radio"] {
+    display: none;
+}
+// CHOSEE house
+
+.wrap-choose-house {
+    // margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.choose-house-info {
+    margin-top: 30px;
+}
+
+.choose-house-foto {
+    img {
+        width: 100%;
+        max-width: 600px;
+    }
+}
+
+.choose-house-title {
+    .house-name {
+        font-size: 24px;
+        font-weight: 600;
+        color: $yellow;
+        display: inline-block;
+        margin: 0 30px 0 0;
+    }
+
+    .change {
+        font-size: 14px;
+        color: $darkBlue;
+        text-decoration: underline;
+        padding-bottom: 1px;
+        opacity: 0.8;
+        transition: 0.1s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.choose-house-item {
+    margin-top: 30px;
+
+    .title {
+        // display: inline-block;
+        float: left;
+        width: 110px;
+        font-size: 18px;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .options {
+        display: inline-block;
+
+        &.opt-rooms {
+            width: calc(100% - 120px);
+
+            input[type="radio"] + label {
+                border: 1px solid #ccc;
+                padding: 0 15px;
+                border-radius: 15px;
+                height: 30px;
+                width: 90px;
+                position: relative;
+                line-height: 25px;
+                cursor: pointer;
+                text-align: right;
+                margin: 0 15px 25px 0;
+            }
+
+            input[type="radio"] + label::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translate(0%, -50%);
+                height: 15px;
+                width: 15px;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                transition: 0.2s ease-out;
+                z-index: 1;
+                background-color: transparent;
+            }
+
+            input[type="radio"]:checked + label::before {
+                background-color: $yellow;
+                border-color: $yellow;
+            }
+        }
+    }
+}
+
+.choose-house-flats {
+    @extend .choose-house-item;
+
+    .title {
+        width: 180px;
+    }
+
+    .options {
+        &.opt-flats {
+            width: calc(100% - 190px);
+        }
+    }
+
+    .numb-of-room {
+        float: left;
+        margin: 0 4px 5px 1px;
+
+        input[type="radio"] + label {
+            color: #000;
+            height: 23px;
+            width: 23px;
+            border: 1px solid #ccc;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="radio"]:checked + label {
+            border-color: $yellow;
+            background: $yellow;
+            color: #fff;
+        }
+    }
+}
+
+.choose-house-send {
+    width: 280px;
+    height: 47px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: $darkBlue;
+    border-radius: 5px;
+    transition: 0.1s ease;
+    margin: 80px auto 0;
+    display: block;
+
+    &:hover {
+        background-color: $yellow;
+        color: #fff;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        color: #fff;
+    }
+}
+
+.floor-planing {
+    text-align: center;
+    margin: 55px 0 40px;
+
+    .title {
+        color: $darkBlue;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .foto {
+        img {
+            width: 100%;
+            max-width: 675px;
+        }
+    }
+}
+
+.variables-planing {
+    text-align: center;
+
+    .title {
+        color: $darkBlue;
+        margin: 0;
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .item {
+        display: inline-block;
+        margin: 0 70px;
+
+        img {
+            margin-bottom: 65px;
+            width: 100%;
+        }
+
+        .name {
+            font-size: 24px;
+            margin: 0 0 25px;
+            color: #8c8c8c;
+        }
+
+        .length {
+            font-size: 24px;
+            font-weight: bold;
+            color: $darkBlue;
+
+            .meters {
+                color: $yellow;
+                font-size: 22px;
+            }
+        }
+    }
+}

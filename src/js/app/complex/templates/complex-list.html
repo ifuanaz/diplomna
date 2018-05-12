@@ -1,0 +1,26 @@
+<div class="house col-xs-6 no-padding" ng-repeat="complex in $ctrl.complexes">
+    <a href="#choose-house"
+        du-smooth-scroll
+        ng-click="$ctrl.getHouse(complex.id)"
+        class="house-img col-xs-12 col-sm-12 col-md-6 no-padding"
+    >
+        <img ng-src="{{ complex.image }}" alt="flat">
+        <span class="hover"></span>
+        <span class="coner"></span>
+    </a>
+    <div class="house-info col-xs-12 col-sm-12 col-md-6">
+        <h4 class="title">{{ complex.title }}</h4>
+        <p class="location">
+            {{ complex.city }}<br>
+            {{ complex.street }}
+        </p>
+        <span class="flats">{{ complex.flats.length }} Квартир</span>
+        <a href="#choose-house"
+            du-smooth-scroll
+            class="link"
+            ng-click="$ctrl.getHouse(complex.id)"
+        >
+            Обрати квартиру
+        </a>
+    </div>
+</div>

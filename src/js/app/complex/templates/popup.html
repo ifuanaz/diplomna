@@ -1,0 +1,40 @@
+<div class="wrap-popup">
+    <div class="content-popup">
+        <form action="">
+            <h3 class="title">Форма зв’язку з менеджером</h3>
+            <div class="block-popup disable">
+                <label for="" class="name">Житловий масив:</label>
+                <input type="text" class="data" value="{{ctrlDialog.model.title}}" disabled>
+            </div>
+            <div class="block-popup disable">
+                <label for="" class="name">Квартира:</label>
+                <input type="text" class="data" value="{{ctrlDialog.model.room}} Кімнатна" disabled>
+            </div>
+            <div class="block-popup disable">
+                <label for="" class="name">Балкон:</label>
+                <input type="text" class="data" value="{{ctrlDialog.model.isBalcon ? 'Так' : 'Ні'}}" disabled>
+            </div>
+            <div class="block-popup disable">
+                <label for="" class="name">Номер квартири:</label>
+                <input type="text" class="data" value="{{ctrlDialog.model.numberOfFlat}}" disabled>
+            </div>
+            <div class="block-popup">
+                <label for="" class="name">Ім’я:</label>
+                <input type="text" class="data" value="">
+            </div>
+            <div class="block-popup">
+                <label for="" class="name">Прізвище:</label>
+                <input type="text" class="data" value="">
+            </div>
+            <div class="block-popup">
+                <label for="" class="name">Телефон:</label>
+                <input type="phone" ng-mask class="data" value="">
+            </div>
+            <div class="block-popup">
+                <label for="" class="name">Email:</label>
+                <input type="email" class="data" value="">
+            </div>
+            <button type="submit" class="popup-send">Зв’язатись з менеджером</button>
+        </form>
+    </div>
+</div>

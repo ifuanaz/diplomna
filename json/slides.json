@@ -1,0 +1,17 @@
+[
+    {
+        "title": "BUILDING COMPANY 1",
+        "text": "Здано в експлуатацію новий житловий комплекс “USA”",
+        "image": "dist/images/sliders/slide1.png"
+    },
+    {
+        "title": "BUILDING COMPANY 2",
+        "text": "Здано в експлуатацію новий житловий комплекс “Canada”",
+        "image": "dist/images/sliders/slide2.png"
+    },
+    {
+        "title": "BUILDING COMPANY 3",
+        "text": "Здано в експлуатацію новий житловий комплекс “Franch”",
+        "image": "dist/images/sliders/slide3.png"
+    }
+]

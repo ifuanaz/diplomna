@@ -1,0 +1,71 @@
+    <div class="container" ng-if="$ctrl.house">
+        <div class="row">
+            <div class="choose-house-head col-xs-12">
+                <h1 class="title">{{$ctrl.house.title}}</h1>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="row" id="chose-house-data">
+            <div class="col-sm-12 col-md-6 choose-house-foto">
+                <img ng-src="{{$ctrl.house.image}}" id="house-foto" alt="foto">
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                <form class="choose-house-info" name="contactmanager" ng-submit="$ctrl.contactManager()">
+                    <div class="choose-house-title">
+                        <h4 class="house-name" id="house-name">Житловий масив</h4>
+                        <a href="#houses" du-smooth-scroll class="change">змінити</a>
+                    </div>
+                    <div class="choose-house-item">
+                        <div class="title">Квартира</div>
+                        <div class="options opt-rooms" id="opt-rooms">
+                            <input type="radio" id="1" ng-model="$ctrl.model.room" value="1" name="radio" required>
+                            <label for="1">1 кім.</label>
+                            <input type="radio" id="2" ng-model="$ctrl.model.room" value="2" name="radio" required>
+                            <label for="2">2 кім.</label>
+                            <input type="radio" id="3" ng-model="$ctrl.model.room" value="3" name="radio" required>
+                            <label for="3">3 кім.</label>
+                            <input type="radio" id="4" ng-model="$ctrl.model.room" value="4" name="radio" required>
+                            <label for="4">4 кім.</label>
+                            <input type="radio" id="5" ng-model="$ctrl.model.room" value="5" name="radio" required>
+                            <label for="5">5 кім.</label>
+                        </div>
+                    </div>
+                    <div class="choose-house-item">
+                        <div class="title">Балкон</div>
+                        <div class="options">
+                            <input type="checkbox" ng-model="$ctrl.model.isBalcon" id="checkbox-balcon">
+                            <label for="checkbox-balcon">{{$ctrl.model.isBalcon ? 'Так' : 'Ні'}}</label>
+                        </div>
+                    </div>
+                    <div class="choose-house-flats">
+                        <div class="title">Номер квартири</div>
+                        <div class="options opt-flats" id="rooms">
+                            <div class="numb-of-room" ng-repeat="flat in $ctrl.house.flats" ng-if="flat.rooms == $ctrl.model.room && flat.balcon == $ctrl.model.isBalcon">
+                                <input type="radio" id="room-{{flat.numberOfFlat}}" name="room" value="{{flat.numberOfFlat}}" required>
+                                <label for="room-{{flat.numberOfFlat}}" ng-click="$ctrl.model.numberOfFlat = flat.numberOfFlat">{{flat.numberOfFlat}}</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="choose-house-send">Зв’язатись з менеджером</button>
+                </form>
+            </div>
+        </div>
+        <div ng-if="$ctrl.house.planning">
+            <div class="floor-planing">
+                <h3 class="title">План поверху</h3>
+                <div class="foto">
+                    <img ng-src="{{$ctrl.house.planning.image}}" alt="foto">
+                </div>
+            </div>
+            <div class="variables-planing">
+                <h3 class="title">Варіанти планування</h3>
+                <div class="item" ng-repeat="plan in $ctrl.house.planning.options">
+                    <img src="{{plan.image}}" alt="foto">
+                    <p class="length">
+                        {{plan.size}} <span class="meters">м<sup>2</sup></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>

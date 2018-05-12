@@ -1,0 +1,255 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+    // HOUSES
+    .house {
+        height: auto;
+        &:nth-child(4n+3), &:nth-child(4n+4) {
+            .house-img {
+                float: left;
+                .coner {
+                    right: inherit;
+                    left: 50%;
+                    border-right:  25px solid transparent;
+                    border-left: 25px solid transparent;
+                }
+            }
+        }
+    }
+
+    .house-info {
+        min-height: 300px;
+        .title {
+            min-height: 44px;
+        }
+    }
+
+    .coner {
+        top: inherit;
+        right: inherit;
+        left: 50%;
+        bottom: 0;
+    	border-left: 25px solid transparent;
+    	border-right: 25px solid transparent;
+    	border-bottom: 28px solid white;
+        transform: translate(-50%, 0%);
+    }
+
+    // RESULT
+    .wrap-result {min-height: inherit;}
+    .result-icon {
+        img {
+            max-width: 70px;
+        }
+    }
+    .result-info {
+        .count {
+            font-size: 28px;
+        }
+        .text {
+            font-size: 24px;
+        }
+    }
+
+    // WHY WE
+    .why-we-item {
+        margin-bottom: 50px;
+    }
+
+    // RESULT
+    .content-result {
+        padding: 45px 60px;
+    }
+    .result-title {
+        font-size: 22px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    // HEADER NAVigation
+    .header-nav {
+        position: relative;
+        z-index: 9;
+        background: #fff;
+    }
+
+    .navigation {
+        height: auto;
+        line-height: 45px;
+        li {
+            float: none;
+            display: block;
+            margin: 0 0;
+            padding: 0 20px;
+        }
+    }
+
+    // SLIDER
+    .slide-info {
+        padding: 0 20px;
+        .slide-title, .slide-text {
+            font-size: 24px;
+        }
+    }
+
+    .slider-btn-prev, .slider-btn-next {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    // CONTACT
+    .wrap-contact {
+        background: #fafafa;
+        height: inherit;
+        .map {
+            display: none;
+        }
+    }
+
+    .contact {
+        padding: 15px;
+    }
+
+    .contact-form {
+        position: static;
+        transform: translate(0%, 0%);
+        padding: 20px;
+        .title {
+            font-size: 22px;
+        }
+        input, select {
+            height: 40px;
+        }
+    }
+
+    //  FOOTER
+    .block-footer-menu {
+        max-width: inherit;
+        margin: 50px 0;
+    }
+
+    .footer-info {
+        .text {max-width: inherit;}
+    }
+
+    .footer-menu {
+        li {
+            float: left;
+            margin-right: 14px;
+        }
+    }
+
+
+    // POPUP
+    .content-popup {
+        padding: 20px;
+        top: 0;
+        transform: translate(0%, 0%);
+    }
+
+    .block-popup {
+        .name {
+            text-align: left;
+        }
+        .data {
+            max-width: inherit;
+        }
+        &.disable {
+            .name {
+                width: 100%;
+                text-align: center;
+            }
+            .data {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .up {display: none !important;}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .house {
+        width: 100%;
+    }
+
+    // CHOOSE HOUSE
+    .choose-house-item {
+        .options {
+            &.opt-rooms {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+    .choose-house-flats {
+        .options {
+            &.opt-flats {
+                margin-top: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    // RESULT
+    .content-result {padding: 45px 20px;}
+    .result {
+        text-align: center;
+    }
+    .result-icon {
+        float: none;
+        margin: 0 0 10px 0;
+    }
+
+    // FOOTER
+    .footer-menu {
+        li {
+            float: none;
+            display: block;
+            margin-right: 0;
+        }
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
