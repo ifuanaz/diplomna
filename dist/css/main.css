@@ -226,7 +226,7 @@ body {
   left: 0;
   width: 40px;
   height: 100px;
-  background: url("/dist/images/slide-arrow-left.svg") no-repeat center #0c2e3b;
+  background: url("../../dist/images/slide-arrow-left.svg") no-repeat center #0c2e3b;
   cursor: pointer;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
@@ -247,7 +247,7 @@ body {
 .slider-btn-next {
   left: inherit;
   right: 0;
-  background-image: url("/dist/images/slide-arrow-right.svg"); }
+  background-image: url("../../dist/images/slide-arrow-right.svg"); }
 
 .wrap-houses {
   background: #fafafa;
@@ -334,7 +334,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
-  background: url("/dist/images/icon-house.svg") no-repeat center rgba(250, 192, 18, 0.8);
+  background: url("../../dist/images/icon-house.svg") no-repeat center rgba(250, 192, 18, 0.8);
   background-size: 50px;
   opacity: 0; }
 
@@ -352,7 +352,7 @@ body {
   z-index: 2; }
 
 .wrap-result {
-  background: url("/dist/images/result.png") no-repeat center;
+  background: url("../../dist/images/result.png") no-repeat center;
   background-size: cover;
   min-height: 370px;
   width: 100%;
@@ -613,7 +613,7 @@ input[type="radio"] {
 .wrap-uniqueness {
   min-height: 300px;
   width: 100%;
-  background: url("/dist/images/tumbs.png") no-repeat center;
+  background: url("../../dist/images/tumbs.png") no-repeat center;
   background-size: cover;
   position: relative; }
 
@@ -661,11 +661,11 @@ input[type="radio"] {
     font-size: 16px;
     font-weight: bold; }
   .uniqueness-item.clients {
-    background-image: url("/dist/images/clients.png"); }
+    background-image: url("../../dist/images/clients.png"); }
   .uniqueness-item.quality {
-    background-image: url("/dist/images/quality.png"); }
+    background-image: url("../../dist/images/quality.png"); }
   .uniqueness-item.family {
-    background-image: url("/dist/images/family.png"); }
+    background-image: url("../../dist/images/family.png"); }
 
 .why-we-item {
   min-height: 183px;
@@ -772,7 +772,7 @@ input[type="radio"] {
        -moz-appearance: none;
             appearance: none;
     padding: 0 15px;
-    background: url("/dist/images/icon-dropdown.svg") no-repeat center right 13px;
+    background: url("../../dist/images/icon-dropdown.svg") no-repeat center right 13px;
     cursor: pointer;
     color: #757575;
     border-radius: 0; }

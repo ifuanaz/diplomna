@@ -208,7 +208,7 @@ body {
     left: 0;
     width: 40px;
     height: 100px;
-    background: url('/dist/images/slide-arrow-left.svg') no-repeat center $darkBlue;
+    background: url('../../dist/images/slide-arrow-left.svg') no-repeat center $darkBlue;
     cursor: pointer;
     transform: translate(0%, -50%);
     transition: 0.1s ease;
@@ -230,7 +230,7 @@ body {
 .slider-btn-next {
     left: inherit;
     right: 0;
-    background-image: url('/dist/images/slide-arrow-right.svg');
+    background-image: url('../../dist/images/slide-arrow-right.svg');
 }
 //  HOUSES
 
@@ -350,7 +350,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1;
-    background: url('/dist/images/icon-house.svg') no-repeat center rgba(250, 192, 18, 0.8);
+    background: url('../../dist/images/icon-house.svg') no-repeat center rgba(250, 192, 18, 0.8);
     background-size: 50px;
     opacity: 0;
 }
@@ -370,7 +370,7 @@ body {
 // RESULT
 
 .wrap-result {
-    background: url('/dist/images/result.png') no-repeat center;
+    background: url('../../dist/images/result.png') no-repeat center;
     background-size: cover;
     min-height: 370px;
     width: 100%;
@@ -447,7 +447,7 @@ body {
 .wrap-uniqueness {
     min-height: 300px;
     width: 100%;
-    background: url('/dist/images/tumbs.png') no-repeat center;
+    background: url('../../dist/images/tumbs.png') no-repeat center;
     background-size: cover;
     position: relative;
 }
@@ -508,15 +508,15 @@ body {
     }
 
     &.clients {
-        background-image: url('/dist/images/clients.png');
+        background-image: url('../../dist/images/clients.png');
     }
 
     &.quality {
-        background-image: url('/dist/images/quality.png');
+        background-image: url('../../dist/images/quality.png');
     }
 
     &.family {
-        background-image: url('/dist/images/family.png');
+        background-image: url('../../dist/images/family.png');
     }
 }
 // WHY WE
@@ -648,7 +648,7 @@ body {
     select {
         appearance: none;
         padding: 0 15px;
-        background: url('/dist/images/icon-dropdown.svg') no-repeat center right 13px;
+        background: url('../../dist/images/icon-dropdown.svg') no-repeat center right 13px;
         cursor: pointer;
         color: #757575;
         border-radius: 0;
